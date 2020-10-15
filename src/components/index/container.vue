@@ -25,22 +25,23 @@
         </el-card>
       </li>
     </ul>
+
   </div>
 </template>
 
 <script>
 export default {
-    props: {
-        iStyleList: {
-            type: Array,
-            required: true
-        }
-    },
-    computed: {
-        navList() {
-            return JSON.parse(JSON.stringify(this.iStyleList));
-        }
-    },
+  props: {
+    nav: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    navList () {
+      return JSON.parse(JSON.stringify(this.nav))
+    }
+  },
   data () {
     return {
       kind: 'all',
@@ -62,12 +63,12 @@ export default {
   },
   methods: {
     over (e) {
-      let dom = e.target;
-      let tagName = dom.tagName.toLowerCase();
-      if (tagName != "dd") {
-          return;
+      let dom = e.target
+      let tagName = dom.tagName.toLowerCase()
+      if (tagName !== 'dd') {
+        return
       }
-      this.kind = dom.getAttribute('data-type');
+      this.kind = dom.getAttribute('data-type')
     }
   }
 }

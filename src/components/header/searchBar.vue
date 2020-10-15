@@ -6,7 +6,7 @@
       </el-col>
       <el-col :span="15" class="center">
         <div class="wrapper">
-          <el-input placeholder="请输入内容" v-model="searchVal" @focus="focus" @blur="blur"></el-input>
+          <el-input placeholder="" v-model="searchVal" @focus="focus" @blur="blur"></el-input>
           <el-button icon="el-icon-search" @click="search" type="primary"></el-button>
           <dl class="hotPlace"  v-if="isHotPlace">
             <dt>热门搜索</dt>

@@ -2,7 +2,7 @@
     <div class="m-geo">
         <div class="position">
             <i class="el-icon-location" />
-            北京
+            {北京}
             <router-link class="changeCity" :to="{name: 'changeCity'}">
                 切换城市
             </router-link>

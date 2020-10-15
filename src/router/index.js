@@ -18,6 +18,11 @@ export default new Router({
           path: 'index',
           name: 'index',
           component: () => import('@/pages/index')
+        },
+        {
+          path: 'changeCity',
+          name: 'changeCity',
+          component: () => import('@/pages/changeCity')
         }
       ]
     },
