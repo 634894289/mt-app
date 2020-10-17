@@ -23,6 +23,11 @@ export default new Router({
           path: 'changeCity',
           name: 'changeCity',
           component: () => import('@/pages/changeCity')
+        },
+        {
+          path: 'goods/:name',
+          name: 'goods',
+          component: () => import('@/pages/goodsList')
         }
       ]
     },

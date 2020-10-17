@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
 export default {
   data () {
     return {
@@ -51,7 +52,7 @@ export default {
   },
   methods: {
     search () {
-      console.log(1)
+      this.$router.push({name: 'goods', params: {name: this.searchVal}});
     },
     focus () {
       this.isFocus = true

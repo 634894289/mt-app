@@ -17,11 +17,11 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: [
-    'vue',
     'vuefix'
   ],
   // add your custom rules here
   rules: {
+    'indent': 'off',
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development

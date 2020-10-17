@@ -7,6 +7,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
 import './assets/css/main.css'
+import './directive'
+import store from './store'
 
 Vue.use(ElementUI, {
   i18n: (key, val) => i18n.t(key, val)
@@ -20,5 +22,6 @@ new Vue({
   i18n,
   router,
   components: { App },
+  store,
   template: '<App/>'
 })
